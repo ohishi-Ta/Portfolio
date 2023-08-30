@@ -62,7 +62,7 @@ const BlogId: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           >
             {blog.images.map((images) => (
               <SplideSlide>
-                <div className={style.page__worksD_imgItem}>
+                <div className={style.page__worksD_imgItem} key={blog.id}>
                   {/* <img src={images.url} /> */}
                 </div>
               </SplideSlide>

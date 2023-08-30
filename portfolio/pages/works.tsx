@@ -48,7 +48,7 @@ const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
             <li className={style.page__works_item} key={blog.id}>
               <Link href={`/works/${blog.id}`}>
                 <figure>
-                  <img src={blog.image.url} />
+                  {/* <img src={blog.image.url} /> */}
                 </figure>
                 <p className={style.item_subtitle}>{blog.client}</p>
                 <p className={style.item_title}>{blog.title}</p>
