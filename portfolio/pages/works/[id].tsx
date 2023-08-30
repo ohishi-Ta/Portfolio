@@ -13,6 +13,7 @@ import Layout from "../../components/Layout";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
 import Link from "next/link";
+import Image from "next/image";
 
 // APIリクエストを行うパスを指定
 export const getStaticPaths: GetStaticPaths<Params> = async () => {
@@ -44,7 +45,7 @@ type Props = {
 const BlogId: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   blog,
 }: Props) => {
-  console.log();
+  console.log(blog);
   return (
     <Layout>
       <PageHeader pageTitle={"Works"} />
@@ -60,21 +61,21 @@ const BlogId: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
               interval: 3000,
             }}
           >
-            {/* {blog.images.map((images) => (
+            {blog.images.map((images) => (
               <SplideSlide>
-                <div className={style.page__worksD_imgItem}>
-                  <img src={images.url} />
+                <div className={style.page__worksD_imgItem} key={blog.id}>
+                  <Image src={images.url} width={blog.image.width} height={blog.image.height} alt="サムネイル" />
                 </div>
               </SplideSlide>
-            ))} */}
+            ))} 
           </Splide>
         </div>
         <div className={style.page__worksD_detailList}>
           <div className={style.page__worksD_detailItem}>
             <span className={style.subtitle}>URL</span>
-            <a href={blog.url} target="_blank" rel="noopener noreferrer">
+            <Link href={blog.url} target="_blank" rel="noopener noreferrer">
               {blog.url}
-            </a>
+            </Link>
           </div>
         </div>
         <div className={style.page__worksD_detailList}>

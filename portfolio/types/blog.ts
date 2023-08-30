@@ -1,4 +1,9 @@
 // /types/blog.ts
+export type Image = {
+  url: string
+  height: number
+  width: number
+}
 
 export type Blog = {
   id: string;
@@ -6,9 +11,9 @@ export type Blog = {
   title: string;
   client: string;
   tags: Tag[];
-  image: string;
-  images: string[];
-  url: string;
+  image: Image;
+  images: Image[];
+  url:string;
   createdAt: string;
   updatedAt: string;
   publishedAt: string;

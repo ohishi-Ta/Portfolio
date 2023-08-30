@@ -5,6 +5,7 @@ import PageHeader from "../components/PageHeader";
 import style from "../styles/Page.module.scss";
 import { client } from "../libs/client";
 import type { Blog, Tag } from "../types/blog";
+import Image from "next/image";
 
 // microCMSへAPIリクエスト
 export const getStaticProps = async () => {
@@ -24,6 +25,8 @@ type Props = {
   blogs: Blog[];
   tags: Tag[];
 };
+
+
 
 const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   blogs,
@@ -48,7 +51,7 @@ const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
             <li className={style.page__works_item} key={blog.id}>
               <Link href={`/works/${blog.id}`}>
                 <figure>
-                  {/* <img src={blog.image.url} /> */}
+                  <Image src={blog.image.url} width={blog.image.width} height={blog.image.height} alt="サムネイル" />
                 </figure>
                 <p className={style.item_subtitle}>{blog.client}</p>
                 <p className={style.item_title}>{blog.title}</p>
