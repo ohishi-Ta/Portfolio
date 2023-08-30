@@ -1,8 +1,8 @@
 // /types/blog.ts
 export type Image = {
-  url: string
-  height: number
-  width: number
+  url: string;
+  height: number;
+  width: number;
 }
 
 export type Blog = {
