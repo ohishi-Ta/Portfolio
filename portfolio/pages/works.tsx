@@ -50,9 +50,9 @@ const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           {blogs.map((blog) => (
             <li className={style.page__works_item} key={blog.id}>
               <Link href={`/works/${blog.id}`}>
-                <figure>
+                {/* <figure>
                   <Image src={blog.image.url} width={blog.image.width} height={blog.image.height} alt="サムネイル" />
-                </figure>
+                </figure> */}
                 <p className={style.item_subtitle}>{blog.client}</p>
                 <p className={style.item_title}>{blog.title}</p>
                 <p className={style.item_skill}>
