@@ -71,7 +71,7 @@ const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
           <ul className={style.page__works_list}>
             <li className={style.page__works_item}>
-              <Link href="">
+              <Link href="test">
                 <figure>
                   <img src="/dammy.jpg" alt="" />
                 </figure>
@@ -85,7 +85,7 @@ const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
               </Link>
             </li>
             <li className={style.page__works_item}>
-              <Link href="">
+              <Link href="test">
                 <figure>
                   <img src="/dammy.jpg" alt="" />
                 </figure>
@@ -99,7 +99,7 @@ const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
               </Link>
             </li>
             <li className={style.page__works_item}>
-              <Link href="">
+              <Link href="test">
                 <figure>
                   <img src="/dammy.jpg" alt="" />
                 </figure>
@@ -111,7 +111,7 @@ const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
               </Link>
             </li>
             <li className={style.page__works_item}>
-              <Link href="">
+              <Link href="test">
                 <figure>
                   <img src="/dammy.jpg" alt="" />
                 </figure>
@@ -123,7 +123,7 @@ const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
               </Link>
             </li>
             <li className={style.page__works_item}>
-              <Link href="">
+              <Link href="test">
                 <figure>
                   <img src="/dammy.jpg" alt="" />
                 </figure>

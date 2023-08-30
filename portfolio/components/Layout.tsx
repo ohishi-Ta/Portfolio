@@ -18,7 +18,7 @@ const Layout: React.FC<Props> = ({ children }) => {
         <link
           href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700&family=Montserrat:wght@500;600;700&family=Noto+Sans+JP:wght@400;700&display=swap"
           rel="stylesheet"
-        ></link>
+        />
 
         <link
           rel="stylesheet"

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import style from "../styles/Page.module.scss";
 import HeaderMenu from "./HeaderMenu";
 import { useState } from "react";
