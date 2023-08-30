@@ -13,6 +13,7 @@ import Layout from "../../components/Layout";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
 import Link from "next/link";
+import Image from "next/image";
 
 // APIリクエストを行うパスを指定
 export const getStaticPaths: GetStaticPaths<Params> = async () => {
@@ -64,7 +65,7 @@ const BlogId: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
             {blog.images.map((image) => (
               <SplideSlide key={blog.id}>
                 <div className={style.page__worksD_imgItem}>
-                  <img src={image.url} />
+                  <Image src={image.url} width={image.width} height={image.height} alt="実績"/>
                 </div>
               </SplideSlide>
             ))}
