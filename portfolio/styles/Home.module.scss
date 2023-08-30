@@ -50,6 +50,7 @@
         @include mq(md) {
           width: 200px;
           height: 200px;
+      mix-blend-mode:normal;
         }
       }
       &_2 {
@@ -67,6 +68,7 @@
         mix-blend-mode: plus-lighter;
         @include mq(md) {
           left: 235px;
+      mix-blend-mode:normal;
         }
       }
       &_3 {
@@ -82,7 +84,6 @@
         animation-duration: 40s;
         animation-fill-mode: both;
         animation-iteration-count: infinite;
-        mix-blend-mode: plus-lighter;
         animation-name: translate-1;
         animation-duration: 15s;
         animation-fill-mode: both;
@@ -93,6 +94,7 @@
           position: fixed;
           top: 202px;
           right: -205px;
+      mix-blend-mode:normal;
         }
       }
       &_4 {
@@ -108,12 +110,12 @@
         animation-duration: 10s;
         animation-fill-mode: both;
         animation-iteration-count: infinite;
-        mix-blend-mode: plus-lighter;
         @include mq(md) {
           border: 50px solid #303560;
           width: 400px;
           height: 400px;
           right: -200px;
+      mix-blend-mode:normal;
         }
       }
       &_5 {
@@ -129,7 +131,9 @@
         animation-duration: 10s;
         animation-fill-mode: both;
         animation-iteration-count: infinite;
-        mix-blend-mode: plus-lighter;
+        @include mq(md) {
+      mix-blend-mode:normal;
+        }
       }
       &_6 {
         border: 150px solid #fff101;
@@ -150,6 +154,7 @@
           height: 400px;
           left: -200px;
           border-radius: 100px;
+      mix-blend-mode:normal;
         }
       }
     }
