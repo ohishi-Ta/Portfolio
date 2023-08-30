@@ -11,7 +11,7 @@
     word-break: break-word;
     @include mq(md) {
       box-shadow: none;
-      padding: 00px 30px;
+      padding: 0px 30px;
     }
   }
   &__block {
