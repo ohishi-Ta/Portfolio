@@ -61,13 +61,13 @@ const BlogId: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
               interval: 3000,
             }}
           >
-            {blog.images.map((images) => (
-              <SplideSlide>
-                <div className={style.page__worksD_imgItem} key={blog.id}>
+            {/* {blog.images.map((images) => (
+              <SplideSlide key={blog.id}>
+                <div className={style.page__worksD_imgItem}>
                   <Image src={images.url} width={blog.image.width} height={blog.image.height} alt="サムネイル" />
                 </div>
               </SplideSlide>
-            ))} 
+            ))}  */}
           </Splide>
         </div>
         <div className={style.page__worksD_detailList}>
