@@ -28,11 +28,14 @@
     display: block;
     // position: relative;
     height: auto;
-    // &::before {
-    //   content: "";
-    //   display: block;
-    //   padding-top: 100%;
-    // }
+    &::before {
+     content: "";
+     display: block;
+     padding-top: 100%;
+     @include mq(md) {
+      content: none;
+    }
+     }
     .Circle {
       &_box {
         width: 100%;
@@ -50,7 +53,7 @@
         @include mq(md) {
           width: 200px;
           height: 200px;
-      mix-blend-mode:normal;
+          mix-blend-mode:normal;
         }
       }
       &_2 {
