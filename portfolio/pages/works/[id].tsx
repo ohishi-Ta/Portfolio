@@ -36,6 +36,7 @@ export const getStaticProps: GetStaticProps<Props, Params> = async (
   };
 };
 
+
 // Props（blog）の型
 type Props = {
   blog: Blog;
@@ -44,7 +45,7 @@ type Props = {
 const BlogId: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   blog,
 }: Props) => {
-  console.log();
+  console.log(blog);
   return (
     <Layout>
       <PageHeader pageTitle={"Works"} />
@@ -60,13 +61,13 @@ const BlogId: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
               interval: 3000,
             }}
           >
-            {/* {blog.images.map((images) => (
-              <SplideSlide>
+            {blog.images.map((image) => (
+              <SplideSlide key={blog.id}>
                 <div className={style.page__worksD_imgItem}>
-                  <img src={images.url} />
+                  <img src={image.url} />
                 </div>
               </SplideSlide>
-            ))} */}
+            ))}
           </Splide>
         </div>
         <div className={style.page__worksD_detailList}>

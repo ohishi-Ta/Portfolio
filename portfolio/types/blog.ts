@@ -13,7 +13,7 @@ export type Blog = {
   client: string;
   tags: Tag[];
   image: Image;
-  images: string;
+  images: Image[];
   url:string;
   createdAt: string;
   updatedAt: string;
