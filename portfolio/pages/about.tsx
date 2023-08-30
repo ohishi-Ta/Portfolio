@@ -4,7 +4,7 @@ import style from "../styles/Page.module.scss";
 
 const about = () => {
   return (
-    <Layout mainClassName="about">
+    <Layout>
       <PageHeader pageTitle={"About"} />
       <div className={style.page__inner}>
         <h2 className="Title_1 en">
