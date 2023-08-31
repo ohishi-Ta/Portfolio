@@ -26,11 +26,8 @@ type Props = {
   tags: Tag[];
 };
 
-
-
 const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   blogs,
-  tags,
 }: Props) => {
   return (
     <Layout>
@@ -51,7 +48,16 @@ const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
             <li className={style.page__works_item} key={blog.id}>
               <Link href={`/works/${blog.id}`}>
                 <figure>
-                  {/* <Image src={blog.image.url} width={blog.image.width} height={blog.image.height} alt="サムネイル" /> */}
+                  {blog.image ? (
+                    <Image
+                      src={blog.image.url}
+                      width={blog.image.width}
+                      height={blog.image.height}
+                      alt="サムネイル"
+                    />
+                  ) : (
+                    <Image src="" alt="No Image" />
+                  )}
                 </figure>
                 <p className={style.item_subtitle}>{blog.client}</p>
                 <p className={style.item_title}>{blog.title}</p>
@@ -60,7 +66,6 @@ const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
                     <span key={tag.id}>{tag.tag}</span>
                   ))}
                 </p>
-                
               </Link>
             </li>
           ))}
