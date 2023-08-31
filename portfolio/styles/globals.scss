@@ -11,7 +11,7 @@ body {
   color: #3d3d33;
 }
 
-img{
+img {
   width: 100%;
   height: auto;
 }
@@ -109,6 +109,21 @@ a {
     a {
       color: #fff;
     }
+  }
+}
+
+.Page_page__worksD_imgItem__y1YWa {
+  padding: 30px 10px;
+  width: 100%;
+  height: 600px;
+  @include mq(md) {
+    height: 300px;
+  }
+  img {
+    object-fit: contain;
+    aspect-ratio: auto;
+    width: 100%;
+    height: 100%;
   }
 }
 
