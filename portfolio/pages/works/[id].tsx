@@ -19,7 +19,7 @@ import Image from "next/image";
 export const getStaticPaths: GetStaticPaths<Params> = async () => {
   const data = await client.get({ endpoint: "blog" });
 
-  const paths = data.contents.map((content: Blog) => `${content.id}`);
+  const paths = data.contents.map((content: Blog) => `/works/${content.id}`);
   return { paths, fallback: false };
 };
 
@@ -96,7 +96,7 @@ const BlogId: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
         ></div>
 
         <div className={style.page__worksD_btn}>
-          <Link href="">一覧へ戻る</Link>
+          <Link href="/works">一覧へ戻る</Link>
         </div>
       </div>
     </Layout>
