@@ -5,6 +5,9 @@ const nextConfig = {
   images: {
     domains: ['images.microcms-assets.io'],
   },
+  experimental: {
+    appDir: false,
+  },
 }
 
 module.exports = nextConfig
