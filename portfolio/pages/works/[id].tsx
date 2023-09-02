@@ -17,7 +17,12 @@ import Image from "next/image";
 
 // APIリクエストを行うパスを指定
 export const getStaticPaths: GetStaticPaths<Params> = async () => {
-  const data = await client.get({ endpoint: "blog" });
+  const data = await client.get({ 
+    endpoint: "blog",
+    queries: {
+      limit: 99 
+    }
+   });
 
   const paths = data.contents.map((content: Blog) => `/works/${content.id}`);
   return { paths, fallback: false };
@@ -28,7 +33,13 @@ export const getStaticProps: GetStaticProps<Props, Params> = async (
   context
 ) => {
   const id = context.params?.id;
-  const data = await client.get({ endpoint: "blog", contentId: id });
+  const data = await client.get({ 
+    endpoint: "blog",
+    contentId: id,
+    queries: {
+      limit: 99 
+    }
+   });
 
   return {
     props: {

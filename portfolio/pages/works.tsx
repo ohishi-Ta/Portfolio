@@ -9,9 +9,18 @@ import Image from "next/image";
 
 // microCMSへAPIリクエスト
 export const getStaticProps = async () => {
-  const blog = await client.get({ endpoint: "blog" });
-  const tag = await client.get({ endpoint: "tag" });
-
+  const blog = await client.get({ 
+    endpoint: "blog",
+    queries: {
+      limit: 99 
+    }
+  });
+  const tag = await client.get({
+     endpoint: "tag",
+      queries: {
+      limit: 20 
+    }
+     });
   return {
     props: {
       blogs: blog.contents,
