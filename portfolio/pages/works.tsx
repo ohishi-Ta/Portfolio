@@ -12,7 +12,15 @@ export const getStaticProps = async () => {
   const blog = await client.get({ 
     endpoint: "blog",
     queries: {
-      limit: 99 
+      limit: 99,
+      filters:"cat[contains]WEBサイト",
+    }
+  });
+  const blog_app = await client.get({ 
+    endpoint: "blog",
+    queries: {
+      limit: 99,
+      filters:"cat[contains]WEBアプリ",
     }
   });
   const tag = await client.get({
@@ -24,6 +32,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       blogs: blog.contents,
+      blogs_app: blog_app.contents,
       tags: tag.contents,
     },
   };
@@ -32,12 +41,15 @@ export const getStaticProps = async () => {
 // Props（blogsとtags）の型
 type Props = {
   blogs: Blog[];
+  blogs_app: Blog[];
   tags: Tag[];
 };
 
 const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   blogs,
+  blogs_app
 }: Props) => {
+  console.log(blogs)
   return (
     <Layout>
       <PageHeader pageTitle={"Works"} />
@@ -85,70 +97,31 @@ const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           <p>Udemyなどで勉強しながら、開発しました。</p>
 
           <ul className={style.page__works_list}>
-            <li className={style.page__works_item}>
-              <Link href="test">
+          {blogs_app.map((blog) => (
+            <li className={style.page__works_item} key={blog.id}>
+              <Link href={`/works/${blog.id}`}>
                 <figure>
-                  <img src="/dammy.jpg" alt="" />
+                  {blog.image ? (
+                    <Image
+                      src={blog.image.url}
+                      width={blog.image.width}
+                      height={blog.image.height}
+                      alt="サムネイル"
+                    />
+                  ) : (
+                    <Image src="" alt="No Image" />
+                  )}
                 </figure>
-                <p className={style.item_subtitle}>学校法人 XXXXX</p>
-                <p className={style.item_title}>公式サイト</p>
+                <p className={style.item_subtitle}>{blog.client}</p>
+                <p className={style.item_title}>{blog.title}</p>
                 <p className={style.item_skill}>
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>Wordpress</span>
+                  {blog.tags.map((tag) => (
+                    <span key={tag.id}>{tag.tag}</span>
+                  ))}
                 </p>
               </Link>
             </li>
-            <li className={style.page__works_item}>
-              <Link href="test">
-                <figure>
-                  <img src="/dammy.jpg" alt="" />
-                </figure>
-                <p className={style.item_subtitle}>学校法人 XXXXX</p>
-                <p className={style.item_title}>公式サイト</p>
-                <p className={style.item_skill}>
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>Wordpress</span>
-                </p>
-              </Link>
-            </li>
-            <li className={style.page__works_item}>
-              <Link href="test">
-                <figure>
-                  <img src="/dammy.jpg" alt="" />
-                </figure>
-                <p className={style.item_subtitle}>学校法人 XXXXX</p>
-                <p className={style.item_title}>公式サイト</p>
-                <p className={style.item_skill}>
-                  <span>HTML</span>
-                </p>
-              </Link>
-            </li>
-            <li className={style.page__works_item}>
-              <Link href="test">
-                <figure>
-                  <img src="/dammy.jpg" alt="" />
-                </figure>
-                <p className={style.item_subtitle}>学校法人 XXXXX</p>
-                <p className={style.item_title}>公式サイト</p>
-                <p className={style.item_skill}>
-                  <span>HTML</span>
-                </p>
-              </Link>
-            </li>
-            <li className={style.page__works_item}>
-              <Link href="test">
-                <figure>
-                  <img src="/dammy.jpg" alt="" />
-                </figure>
-                <p className={style.item_subtitle}>学校法人 XXXXX</p>
-                <p className={style.item_title}>公式サイト</p>
-                <p className={style.item_skill}>
-                  <span>HTML</span>
-                </p>
-              </Link>
-            </li>
+          ))}
           </ul>
         </div>
       </div>
