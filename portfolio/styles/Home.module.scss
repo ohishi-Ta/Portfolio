@@ -3,12 +3,10 @@
 .home {
   @keyframes rotate-1 {
     0% {
-      transform: translate(0px, 0px) scale(1, 1) rotate(360deg) skew(0deg, 0deg);
-      opacity: 1;
+      transform: rotate(0);
     }
-    99%,to {
-      transform: translate(0px, 0px) scale(1, 1) rotate(0deg) skew(0deg, 0deg);
-      opacity: 1;
+    100% {
+      transform: rotate(360deg);
     }
   }
   @keyframes translate-1 {
@@ -137,19 +135,21 @@
         }
       }
       &_6 {
-        border: 150px solid #fff101;
-        width: 800px;
-        height: 800px;
+        border: 100px solid #fff101;
+        width: 500px;
+        height: 500px;
         position: fixed;
         top: 60vh;
-        left: -200px;
-        border-radius: 200px;
+        left: -160px;
+        border-radius: 100px;
         animation-name: rotate-1;
         animation-duration: 40s;
         animation-fill-mode: both;
         animation-iteration-count: infinite;
         mix-blend-mode: plus-lighter;
+        animation-timing-function:linear;
         @include mq(md) {
+          animation-duration: 20s;
           border: 80px solid #fff101;
           width: 400px;
           height: 400px;
