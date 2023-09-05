@@ -57,11 +57,11 @@ const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
         <h3 className="Title_2 en">Webサイト</h3>
         <p>
           有名大学の公式サイトや自治体の特設サイトなど立ち上げから数多く経験してきました。
+          <br />CMS構築では、Movable Type、Wordpressなどブロックエディタでお客様が簡単に更新できるようなシステムも実装しました。
+          <br />以下は、担当してきた主な実績です。
         </p>
         <p>
-          CMS構築では、Movable
-          Type、Wordpressなどブロックエディタでお客様が簡単に
-          更新できるようなシステムも実装しました。
+
         </p>
 
         <ul className={style.page__works_list}>

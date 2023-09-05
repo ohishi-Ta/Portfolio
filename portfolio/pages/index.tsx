@@ -99,17 +99,23 @@ const Home: NextPage = () => {
               <div className={style.home__Lead_inner}>
                 <p className={style.home__Lead}>
                   <span>
-                    広告制作会社（Web・DTP）でフロントエンドエンジニアをしています。
+                    広告企画制作会社でフロントエンドエンジニア（役職：チーフ）をしています。
                     <br />
-                    CMS構築やWebアプリ開発などロジックを考えてコーディングするのが好きです。
+                    CMSなどでシステム構築する際にロジックを考えてコーディングするのが好きです。
                     <br />
-                    CMSはMovable Typeをよく使用しています。
+                    実務では使用していませんが、ReactやNext.jsなどモダンな技術を使用して、<br />
+                    WEB開発（アプリ・サイト）に携わりたいと考えています。
+                    <br />
+                    （このポートフォリオもNext.jsとmicroCMSを使用しています。）
+                    <br />
+                    また、バックエンドやAWSなどフロント以外のことも扱えるようになっていきたいです。
                   </span>
                   <br />
                   <span className={style.home__Lead_skill}>
-                    HTML/CSS(SCSS)/Javascript/Typescript/jQuery/React/Next.js
+                    <span className={style.home__Lead_skill_title}>Skills</span>
+                    HTML/CSS(SASS)/Javascript/Typescript/jQuery/React/Next.js
                     <br />
-                    Movable Type/WordPress/HeartCore
+                    Movable Type/WordPress/HeartCore/microCMS
                   </span>
                 </p>
               </div>
