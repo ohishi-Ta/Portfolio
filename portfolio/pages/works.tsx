@@ -80,7 +80,7 @@ const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
                     <Image src="" alt="No Image" />
                   )}
                 </figure>
-                <p className={style.item_subtitle}>{blog.client}</p>
+                {/* <p className={style.item_subtitle}>{blog.client}</p> */}
                 <p className={style.item_title}>{blog.title}</p>
                 <p className={style.item_skill}>
                   {blog.tags.map((tag) => (

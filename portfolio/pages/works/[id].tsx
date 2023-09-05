@@ -64,7 +64,7 @@ const BlogId: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       <div className={`${style.page__inner} ${style.page__worksD_inner}`}>
         <div className={style.page__worksD_titlebox}>
           <h1 className={style.page__worksD_title}>{blog.title}</h1>
-          <p className={style.page__worksD_client}>{blog.client}</p>
+          {/* <p className={style.page__worksD_client}>{blog.client}</p> */}
         </div>
         <div className={style.page__worksD_img}>
           <Splide
