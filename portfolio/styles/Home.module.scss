@@ -181,7 +181,8 @@
     &_box {
       display: flex;
       gap: 60px;
-      align-items: end;
+      align-items: start;
+      justify-content: center;
       @include mq(md) {
         display: block;
       }
@@ -199,6 +200,7 @@
       line-height: 1.2;
       white-space: nowrap;
       font-weight: bold;
+      margin-top: 50px;
       @include mq(md) {
         font-size: 50px;
       }
@@ -236,6 +238,27 @@
     word-break: break-word;
     @include mq(md) {
       position: relative;
+    }
+    &_text{
+      display: block;
+      // gap: 10px;
+      // align-items: flex-start;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    &_tag{
+      display: inline-block;
+      background-color: #00a884;
+      color: #fff;
+      border-radius: 30px;
+      padding: 3px 10px;
+    }
+    &_tag2{
+      display: inline-block;
+      background-color: #E57100;
+      color: #fff;
+      border-radius: 30px;
+      padding: 3px 10px;
     }
     &_skill {
       margin-top: 30px;

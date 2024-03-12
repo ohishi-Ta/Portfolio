@@ -98,24 +98,19 @@ const Home: NextPage = () => {
               </div>
               <div className={style.home__Lead_inner}>
                 <p className={style.home__Lead}>
-                  <span>
-                    広告企画制作会社でフロントエンドエンジニア（役職：チーフ）をしています。
-                    <br />
-                    CMSなどでシステム構築する際にロジックを考えてコーディングするのが好きです。
-                    <br />
-                    実務では使用していませんが、ReactやNext.jsなどモダンな技術を使用して、<br />
-                    WEB開発（アプリ・サイト）に携わりたいと考えています。
-                    <br />
-                    （このポートフォリオもNext.jsとmicroCMSを使用しています。）
-                    <br />
-                    また、バックエンドやAWSなどフロント以外のことも扱えるようになっていきたいです。
-                  </span>
-                  <br />
+                  <span className={style.home__Lead_text}>広告企画制作会社において、フロントエンドエンジニア（チーフ）として活躍しています。</span>
+                  <span className={style.home__Lead_tag}>役割</span><span className={style.home__Lead_text}>フォーマットコーディング、CMS構築、案件采配、ディレクション、協力会社との折衝、新人教育などを担当しています。</span>
+                  <span className={style.home__Lead_tag}>技術面</span><span className={style.home__Lead_text}>Wordpress、MovableType、PowerCMS、ハートコアなどのCMSを構築することができます。また、汎用性を考慮したCSS設計や迅速なコーディングに自信があります。</span>
+                  <span className={style.home__Lead_tag}>ディレクション・マネージング</span><span className={style.home__Lead_text}>案件の采配においては、クオリティを維持しながら、技術レベルや教育の観点も考慮しています。プランナーや関係者からの相談に適切に対応し、柔軟なアドバイスを提供できると自信があります。また、自身もディレクションを行い、相談しやすい雰囲気を作ることを長所としています。
+                  <br />このように、プロジェクト全体の成功に向けて効果的なリーダーシップを発揮し、チームのモチベーションと生産性を向上させることに貢献しています。</span>
+                  <span className={style.home__Lead_tag2}>今後やりたいこと</span><span className={style.home__Lead_text}>WebアプリやバックエンドなどUXに繋がる技術を幅広く習得し、知識を増やしていきたいです。また、マネージング力も機会があれば積極的に伸ばしていきたいです。</span>
+                  <span className={style.home__Lead_tag2}>余談</span><span className={style.home__Lead_text}>ReactやNext.jsなどモダンな技術へも興味があり、実務では使用していませんがこのポートフォリオをNext.js&microCMSで作成してみました。</span>
+
                   <span className={style.home__Lead_skill}>
                     <span className={style.home__Lead_skill_title}>Skills</span>
-                    HTML/CSS(SASS)/Javascript/Typescript/jQuery/React/Next.js
+                    HTML/CSS(Sass)/Javascript/jQuery/React/Next.js/Typescript/Git/Gulp
                     <br />
-                    Movable Type/WordPress/HeartCore/microCMS
+                    MovableType/WordPress/PowerCMS/ハートコア/microCMS
                   </span>
                 </p>
               </div>
