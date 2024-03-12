@@ -86,6 +86,31 @@
         padding: 40px 0 30px;
       }
     }
+    &_text{
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    &_tag{
+      display: inline-block;
+      background-color: #00a884;
+      color: #fff;
+      border-radius: 5px;
+      padding: 3px 20px;
+      @include mq(md) {
+        padding: 3px 10px;
+      }
+    }
+    &_tag2{
+      display: inline-block;
+      background-color: #E57100;
+      color: #fff;
+      border-radius: 5px;
+      padding: 3px 20px;
+      @include mq(md) {
+        padding: 3px 10px;
+      }
+    }
   }
 
   &__works {

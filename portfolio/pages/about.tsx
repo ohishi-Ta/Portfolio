@@ -12,12 +12,14 @@ const about = () => {
         </h2>
         <p>1996年1月14日生　静岡県出身</p>
         <p>
-        広告企画制作会社でフロントエンドエンジニア（役職：チーフ）をしています。<br />
-        CMSなどでシステム構築する際にロジックを考えてコーディングするのが好きです。<br />
-        実務では使用していませんが、ReactやNext.jsなどモダンな技術を使用して、<br />
-        WEB開発（アプリ・サイト）に携わりたいと考えています。<br />
-        （このポートフォリオもNext.jsとmicroCMSを使用しています。）<br />
-        また、バックエンドやAWSなどフロント以外のことも扱えるようになっていきたいです。
+        <span className={style.page__header_text}>広告企画制作会社において、フロントエンドエンジニア（チーフ）として活躍しています。</span>
+                  <span className={style.page__header_tag}>役割</span><span className={style.page__header_text}>フォーマットコーディング、CMS構築、案件采配、ディレクション、協力会社との折衝、新人教育などを担当しています。</span>
+                  <span className={style.page__header_tag}>技術面</span><span className={style.page__header_text}>Wordpress、MovableType、PowerCMS、ハートコアなどのCMSを構築することができます。また、汎用性を考慮したCSS設計や迅速なコーディングに自信があります。</span>
+                  <span className={style.page__header_tag}>ディレクション・マネージング</span><span className={style.page__header_text}>案件の采配においては、クオリティを維持しながら、技術レベルや教育の観点も考慮しています。プランナーや関係者からの相談に適切に対応し、柔軟なアドバイスを提供できると自信があります。また、自身もディレクションを行い、相談しやすい雰囲気を作ることを長所としています。
+                  <br />このように、プロジェクト全体の成功に向けて効果的なリーダーシップを発揮し、チームのモチベーションと生産性を向上させることに貢献しています。</span>
+                  <span className={style.page__header_tag2}>今後やりたいこと</span><span className={style.page__header_text}>アプリ開発やバックエンドなどUXに繋がる技術を幅広く習得し、知識を増やしていきたいです。また、マネージング力も機会があれば積極的に伸ばしていきたいです。</span>
+                  <span className={style.page__header_tag2}>余談</span><span className={style.page__header_text}>ReactやNext.jsなどモダンな技術へも興味があり、実務では使用していませんがこのポートフォリオをNext.js&microCMSで作成してみました。</span>
+
         </p>
         <div className={style.page__box}>
           <h3 className="Title_2 en">経歴</h3>
@@ -37,21 +39,9 @@ const about = () => {
         <div className={style.page__box}>
           <h3 className="Title_2 en">Skill</h3>
           <p>
-            HTML/CSS(SASS)/Javascript/Typescript/jQuery/React/Next.js
-            <br />
-            Movable Type/WordPress/HeartCore/microCMS
-          </p>
-        </div>
-        <div className={style.page__box}>
-          <h3 className="Title_2 en">Blog</h3>
-          <p>
-            <a
-              href="https://zenn.dev/t_oishi"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://zenn.dev/t_oishi
-            </a>
+          HTML/CSS(Sass)/Javascript/jQuery/React/Next.js/Typescript/php/Git/Gulp
+           <br />
+           MovableType/WordPress/PowerCMS/ハートコア/microCMS
           </p>
         </div>
         <div className={style.page__box}>
