@@ -238,6 +238,7 @@
     word-break: break-word;
     @include mq(md) {
       position: relative;
+      padding: 30px 20px;
     }
     &_text{
       display: block;
@@ -250,15 +251,21 @@
       display: inline-block;
       background-color: #00a884;
       color: #fff;
-      border-radius: 30px;
-      padding: 3px 10px;
+      border-radius: 5px;
+      padding: 3px 20px;
+      @include mq(md) {
+        padding: 3px 10px;
+      }
     }
     &_tag2{
       display: inline-block;
       background-color: #E57100;
       color: #fff;
-      border-radius: 30px;
-      padding: 3px 10px;
+      border-radius: 5px;
+      padding: 3px 20px;
+      @include mq(md) {
+        padding: 3px 10px;
+      }
     }
     &_skill {
       margin-top: 30px;
