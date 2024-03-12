@@ -93,7 +93,7 @@ const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
         </ul>
 
         <div className={style.page__block}>
-          <h3 className="Title_2 en">Webアプリ</h3>
+          <h3 className="Title_2 en">自学</h3>
           <p>Udemyなどで勉強しながら、開発しました。</p>
 
           <ul className={style.page__works_list}>
