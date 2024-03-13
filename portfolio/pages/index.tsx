@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   const [isShowLoading, setIsShowLoading] = useState(false);
 
   const toggleVisibility = () => {
-    window.scrollY > 200 ? setIsVisible(true) : setIsVisible(false);
+    window.scrollY > 300 ? setIsVisible(true) : setIsVisible(false);
   };
 
   useEffect(() => {
@@ -103,7 +103,7 @@ const Home: NextPage = () => {
                   <span className={style.home__Lead_tag}>技術面</span><span className={style.home__Lead_text}>Wordpress、MovableType、PowerCMS、ハートコアなどのCMSを構築することができます。また、汎用性を考慮したCSS設計や迅速なコーディングに自信があります。</span>
                   <span className={style.home__Lead_tag}>ディレクション・マネージング</span><span className={style.home__Lead_text}>案件の采配においては、クオリティを維持しながら、技術レベルや教育の観点も考慮しています。プランナーや関係者からの相談に適切に対応し、柔軟なアドバイスを提供できると自信があります。また、自身もディレクションを行い、相談しやすい雰囲気を作ることを長所としています。
                   <br />このように、プロジェクト全体の成功に向けて効果的なリーダーシップを発揮し、チームのモチベーションと生産性を向上させることに貢献しています。</span>
-                  <span className={style.home__Lead_tag2}>今後やりたいこと</span><span className={style.home__Lead_text}>アプリ開発やバックエンドなどUXに繋がる技術を幅広く習得し、知識を増やしていきたいです。また、マネージング力も機会があれば積極的に伸ばしていきたいです。</span>
+                  <span className={style.home__Lead_tag2}>キャリア展望</span><span className={style.home__Lead_text}>フロントエンドだけでなくバックエンドなどWeb開発における技術を幅広く習得し、総合的な知識を持ってUXを向上させる提案・アドバイスができるようになりたいです。<br/>また、マネージング力も機会があれば、今までの経験を活かして積極的に伸ばしていきたいです。</span>
                   <span className={style.home__Lead_tag2}>余談</span><span className={style.home__Lead_text}>ReactやNext.jsなどモダンな技術へも興味があり、実務では使用していませんがこのポートフォリオをNext.js&microCMSで作成してみました。</span>
 
                   <span className={style.home__Lead_skill}>
