@@ -45,6 +45,12 @@ const about = () => {
           </p>
         </div>
         <div className={style.page__box}>
+          <h3 className="Title_2 en">資格</h3>
+          <p>
+          AWS Certified Cloud Practitioner（2024-04）
+          </p>
+        </div>
+        <div className={style.page__box}>
           <h3 className="Title_2 en">Hobby</h3>
           <p>■キャンプ</p>
           <p>自然が好きなので、よくキャンプに行きます。特に秋〜冬の時期に行くのが景色も空気も澄んでいてリフレッシュできます。
