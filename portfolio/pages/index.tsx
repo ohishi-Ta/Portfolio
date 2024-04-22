@@ -94,6 +94,15 @@ const Home: NextPage = () => {
                   <p className={`${style.home__mvTitle_job} en`}>
                     Web Engineer
                   </p>
+                  <p className={style.home__Lead_skill}>
+                    <span className={style.home__Lead_skill_title}>Skills</span>
+                    HTML/CSS(Sass)/Javascript/jQuery/React/Next.js/Typescript/php/Git/Gulp
+                    <br />
+                    MovableType/WordPress/PowerCMS/ハートコア/microCMS
+                    <br />
+                    <span className={style.home__Lead_skill_title}>資格</span>
+                    AWS Certified Cloud Practitioner（2024-04）
+                  </p>
                 </div>
               </div>
               <div className={style.home__Lead_inner}>
@@ -105,13 +114,6 @@ const Home: NextPage = () => {
                   <br />このように、プロジェクト全体の成功に向けて効果的なリーダーシップを発揮し、チームのモチベーションと生産性を向上させることに貢献しています。</span>
                   <span className={style.home__Lead_tag2}>キャリア展望</span><span className={style.home__Lead_text}>フロントエンドだけでなくバックエンドなどWeb開発における技術を幅広く習得し、総合的な知識を持ってUXを向上させる提案・アドバイスができるようになりたいです。<br/>また、マネージング力も機会があれば、今までの経験を活かして積極的に伸ばしていきたいです。</span>
                   <span className={style.home__Lead_tag2}>余談</span><span className={style.home__Lead_text}>ReactやNext.jsなどモダンな技術へも興味があり、実務では使用していませんがこのポートフォリオをNext.js&microCMSで作成してみました。</span>
-
-                  <span className={style.home__Lead_skill}>
-                    <span className={style.home__Lead_skill_title}>Skills</span>
-                    HTML/CSS(Sass)/Javascript/jQuery/React/Next.js/Typescript/php/Git/Gulp
-                    <br />
-                    MovableType/WordPress/PowerCMS/ハートコア/microCMS
-                  </span>
                 </p>
               </div>
             </div>
