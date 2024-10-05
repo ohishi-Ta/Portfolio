@@ -102,11 +102,6 @@ const Home: NextPage = () => {
                     <br />
                     <span className={style.home__Lead_skill_title}>資格</span>
                     AWS Certified Cloud Practitioner（2024-04）
-
-                    <p>
-                      <Link href="/about" style={{textDecoration:"underline",marginRight:"10px"}}>About</Link>
-                      <Link href="/works" style={{textDecoration:"underline"}}>Works</Link>
-                    </p>
                   </p>
                 </div>
               </div>
