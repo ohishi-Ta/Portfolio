@@ -128,7 +128,7 @@ const Home: NextPage = () => {
               <div className={style.home__Button}>
                 <div className={style.home__Button_item}>
                   <Link href="/about" className="en">
-                    About
+                    Abouta
                   </Link>
                 </div>
                 <div className={style.home__Button_item}>
