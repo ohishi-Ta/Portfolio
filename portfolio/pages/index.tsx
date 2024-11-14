@@ -104,7 +104,7 @@ const Home: NextPage = () => {
                     AWS Certified Cloud Practitioner（2024-04）
 
                     <p>
-                      <Link href="/about" style={{textDecoration:"underline",marginRight:"10px"}}>About</Link>
+                      <Link href="/about" style={{textDecoration:"underline",marginRight:"10px"}}>Aboutaa</Link>
                       <Link href="/works" style={{textDecoration:"underline"}}>Works</Link>
                     </p>
                   </p>
@@ -128,7 +128,7 @@ const Home: NextPage = () => {
               <div className={style.home__Button}>
                 <div className={style.home__Button_item}>
                   <Link href="/about" className="en">
-                    Abouta
+                    Aboutaaaa
                   </Link>
                 </div>
                 <div className={style.home__Button_item}>
