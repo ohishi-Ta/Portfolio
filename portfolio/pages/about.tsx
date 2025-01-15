@@ -45,7 +45,7 @@ const about = () => {
         <div className={style.page__box}>
           <h3 className="Title_2 en">経歴</h3>
           <dl className={style.page__history}>
-            <dt>2018年3月卒業</dt>
+            <dt>2018年3月卒業 </dt>
             <dd>東京農業大学 生物産業学部 食品香粧学科</dd>
             <dt>2018年4月 ~ 2019年12月</dt>
             <dd>敷島製パン株式会社 生産職（一般職）</dd>
