@@ -100,7 +100,7 @@ const Home: NextPage = () => {
                 <p className={style.home__Lead}>
                   <span className={style.home__Lead_tag}>Skill</span>
                   <span className={style.home__Lead_text}>
-                    ■フロントエンド<br />
+                    ■フロントエンド<br />　
                     　HTML/CSS(Sass)/Javascript/jQuery/React/Next.js/Typescript<br />
                     ■バックエンド<br />
                     　php<br />
