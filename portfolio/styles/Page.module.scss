@@ -175,6 +175,15 @@
         }
       }
     }
+    &_btn{
+      a{
+        font-size: 25px;
+        border-bottom: 3px solid #00a884;
+        &::after{
+          font-size: 16px;
+        }
+      }
+    }
   }
 
   &__worksD {
@@ -268,3 +277,4 @@
     }
   }
 }
+
