@@ -96,6 +96,7 @@ const Home: NextPage = () => {
                   </p>
                 </div>
               </div>
+              
               <div className={style.home__Lead_inner}>
                 <p className={style.home__Lead}>
                   <span className={style.home__Lead_tag}>Skill</span>
