@@ -153,6 +153,7 @@ const Home: NextPage = () => {
             </div>
           </div>
 
+
           <div
             className={`${style.scroll_anime_box} pc ${
               isVisible ? "active" : ""
