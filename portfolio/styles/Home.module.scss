@@ -181,7 +181,7 @@
     &_box {
       display: flex;
       gap: 60px;
-      align-items: start;
+      align-items: center;
       justify-content: center;
       @include mq(md) {
         display: block;
@@ -242,7 +242,6 @@
     }
     &_text{
       display: block;
-      margin-top: 5px;
       margin-bottom: 20px;
     }
     &_tag{
@@ -251,16 +250,15 @@
       color: #fff;
       border-radius: 5px;
       padding: 3px 20px;
+      margin-bottom: 10px;
       @include mq(md) {
         padding: 3px 10px;
       }
     }
     &_tag2{
+      border-bottom: 2px solid #00a884;
       display: inline-block;
-      background-color: #E57100;
-      color: #fff;
-      border-radius: 5px;
-      padding: 3px 20px;
+      margin-right: 10px;
       @include mq(md) {
         padding: 3px 10px;
       }

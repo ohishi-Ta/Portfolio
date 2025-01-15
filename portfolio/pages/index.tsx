@@ -92,34 +92,30 @@ const Home: NextPage = () => {
                     1996年1月14日生 静岡県出身
                   </p>
                   <p className={`${style.home__mvTitle_job} en`}>
-                    Web Engineer
-                  </p>
-                  <p className={style.home__Lead_skill}>
-                    <span className={style.home__Lead_skill_title}>Skills</span>
-                    HTML/CSS(Sass)/Javascript/jQuery/React/Next.js/Typescript/php/Git/Gulp
-                    <br />
-                    MovableType/WordPress/PowerCMS/ハートコア/microCMS
-                    <br />
-                    <span className={style.home__Lead_skill_title}>資格</span>
-                    AWS Certified Cloud Practitioner（2024-04）
-
-                    <p>
-                      <Link href="/about" style={{textDecoration:"underline",marginRight:"10px"}}>Aboutaa</Link>
-                      <Link href="/works" style={{textDecoration:"underline"}}>Works</Link>
-                    </p>
+                    FrontEndEngineer
                   </p>
                 </div>
               </div>
               <div className={style.home__Lead_inner}>
                 <p className={style.home__Lead}>
-                  <span className={style.home__Lead_text}>広告企画制作会社において、フロントエンドエンジニア（チーフ）として活躍しています。</span>
-                  <span className={style.home__Lead_tag}>役割</span><span className={style.home__Lead_text}>フォーマットコーディング、CMS構築、案件采配、ディレクション、協力会社との折衝、新人教育などを担当しています。</span>
-                  <span className={style.home__Lead_tag}>技術面</span><span className={style.home__Lead_text}>Wordpress、MovableType、PowerCMS、ハートコアなどのCMSを構築することができます。また、汎用性を考慮したCSS設計や迅速なコーディングに自信があります。</span>
-                  <span className={style.home__Lead_tag}>ディレクション・マネージング</span><span className={style.home__Lead_text}>案件の采配においては、クオリティを維持しながら、技術レベルや教育の観点も考慮しています。プランナーや関係者からの相談に適切に対応し、柔軟なアドバイスを提供できると自信があります。また、自身もディレクションを行い、相談しやすい雰囲気を作ることを長所としています。
-                  <br />このように、プロジェクト全体の成功に向けて効果的なリーダーシップを発揮し、チームのモチベーションと生産性を向上させることに貢献しています。</span>
-                  <span className={style.home__Lead_tag2}>キャリア展望</span><span className={style.home__Lead_text}>フロントエンドだけでなくバックエンドなどWeb開発における技術を幅広く習得し、総合的な知識を持ってUXを向上させる提案・アドバイスができるようになりたいです。<br/>また、マネージング力も機会があれば、今までの経験を活かして積極的に伸ばしていきたいです。</span>
-                  <span className={style.home__Lead_tag2}>余談</span><span className={style.home__Lead_text}>ReactやNext.jsなどモダンな技術へも興味があり、実務では使用していませんがこのポートフォリオをNext.js&microCMSで作成してみました。</span>
+                  <span className={style.home__Lead_tag}>Skill</span>
+                  <span className={style.home__Lead_text}>
+                    ■フロントエンド<br />
+                    　HTML/CSS(Sass)/Javascript/jQuery/React/Next.js/Typescript<br />
+                    ■バックエンド<br />
+                    　php<br />
+                    ■CMS<br />
+                    　MovableType/WordPress/PowerCMS/PowerCMSX/HeartCore/microCMS<br />
+                    ■インフラ<br />
+                    　AWS/Terraform<br />
+                    ■その他<br />
+                    　Git/Gulp
+                    </span>
+                  <span className={style.home__Lead_tag}>資格</span><span className={style.home__Lead_text}>AWS Certified Cloud Practitioner（2024-04）<br />AWS Certified Solutions Architect - Associate(2024-12)<br />Linuc Lv.1(2024-12)</span>
+                  <span className={style.home__Lead_tag2}><Link href="/about/">About</Link></span>
+                  <span className={style.home__Lead_tag2}><Link href="/works/">Works</Link></span>
                 </p>
+                
               </div>
             </div>
             <div
@@ -128,7 +124,7 @@ const Home: NextPage = () => {
               <div className={style.home__Button}>
                 <div className={style.home__Button_item}>
                   <Link href="/about" className="en">
-                    Aboutaaaa
+                    About
                   </Link>
                 </div>
                 <div className={style.home__Button_item}>
