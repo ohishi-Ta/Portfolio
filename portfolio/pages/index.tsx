@@ -111,10 +111,14 @@ const Home: NextPage = () => {
                     　AWS/Terraform<br />
                     ■その他<br />
                     　Git/Gulp
+                    
+                    
                     </span>
                   <span className={style.home__Lead_tag}>資格</span><span className={style.home__Lead_text}>AWS Certified Cloud Practitioner（2024-04）<br />AWS Certified Solutions Architect - Associate(2024-12)<br />Linuc Lv.1(2024-12)</span>
                   <span className={style.home__Lead_tag2}><Link href="/about/">About</Link></span>
                   <span className={style.home__Lead_tag2}><Link href="/works/">Works</Link></span>
+                  <span className={style.home__Lead_tag2}><Link href="https://zenn.dev/t_oishi" target="_blank">Zenn</Link></span>
+                  <span className={style.home__Lead_tag2}><Link href="https://github.com/ohishi-Ta" target="_blank">Github</Link></span>
                 </p>
                 
               </div>

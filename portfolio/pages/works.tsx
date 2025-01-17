@@ -55,9 +55,12 @@ const works: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       <PageHeader pageTitle={"Works"} />
       <div className={style.page__inner}>
         <h3 className="Title_2 en">自学</h3>
-        <div className={style.page__works_btn}>
+        <span className={style.page__works_btn}>
           <Link href="https://zenn.dev/t_oishi" target="_blank">Zenn</Link>
-        </div>
+        </span>
+        <span className={style.page__works_btn}>
+          <Link href="https://github.com/ohishi-Ta" target="_blank">Github</Link>
+        </span>
         <ul className={style.page__works_list}>
           {blogs_app.map((blog) => (
             <li className={style.page__works_item} key={blog.id}>
